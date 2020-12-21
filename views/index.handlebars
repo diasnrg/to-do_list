@@ -1,0 +1,19 @@
+<div class="container">
+    <div class='form_container'>
+        <form action='/status' method='POST'>
+            <input type='text' class='input_text' name='input_text'>
+            <input type='submit' class='submit_bt' value='add'>
+        </form>
+    </div>
+    <div class='tasks_container'>
+        {{#each tasks}}
+            <div class='item'>
+                <p class={{status}}>{{text}}</p>
+                <div class='buttons'>
+                    <a class='done_bt' href='/done/status/?task_id={{_id}}'>done</a>
+                    <a class='delete_bt' href='/delete/status/?task_id={{_id}}'>x</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>    

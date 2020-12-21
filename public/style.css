@@ -1,0 +1,63 @@
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.form_container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    width:400px;
+    height:100px;
+    margin:0px auto 50px;
+    padding:10px;
+}
+
+.input_text{
+    border:3px solid blue;
+    width:300px;
+    height:40px;
+}
+
+.submit_bt{
+    border:none;
+    background:green;
+    color:white;
+    height:40px;
+    width:40px;
+}
+
+.tasks_container{
+    padding:50px;
+}
+
+.item{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width:500px;
+
+    margin:10px auto;
+    padding:0px 20px;
+    border:1px solid purple;
+}
+.buttons a{
+    text-decoration: none;
+}
+.done_bt{
+    color:green;
+}
+.delete_bt{
+    color:red;
+}
+
+.done{
+    text-decoration:line-through;
+}
